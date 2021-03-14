@@ -296,7 +296,7 @@ This endpoint either creates a new question or returns search results.
 - General:
   - Creates a new question using JSON request parameters.
   - Returns JSON object with newly created question, as well as paginated questions.
-- Sample: `curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json" -d '{ "question": "How Many Countries Have Still The Shilling As Currency", "answer": "Four Tanzania, Somalia, Kenya, Uganda ", "difficulty": 3, "category": "2" }'`<br>
+- Sample: `curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json" -d '{ "question": "How Many Countries Have Still The Shilling As Currency", "answer": "Four Tanzania, Somalia, Kenya, Uganda ", "difficulty": 3, "category": "2" }' `<br>
 
         {
             "created": 27,
@@ -383,74 +383,74 @@ This endpoint either creates a new question or returns search results.
   - Returns JSON object with paginated matching questions.
 - Sample: `curl http://127.0.0.1:5000/questions -X POST -H "Content-Type: application/json" -d '{"searchTerm": "what"}'`<br>
   {
-  "questions": [
-  {
-  "answer": "Apollo 13",
-  "category": 5,
-  "difficulty": 4,
-  "id": 2,
-  "question": "What movie earned Tom Hanks his third straight Oscar nomination, in 1996?"
-  },
-  {
-  "answer": "Tom Cruise",
-  "category": 5,
-  "difficulty": 4,
-  "id": 4,
-  "question": "What actor did author Anne Rice first denounce, then praise in the role of her beloved Lestat?"
-  },
-  {
-  "answer": "Edward Scissorhands",
-  "category": 5,
-  "difficulty": 3,
-  "id": 6,
-  "question": "What was the title of the 1990 fantasy directed by Tim Burton about a young man with multi-bladed appendages?"
-  },
-  {
-  "answer": "Muhammad Ali",
-  "category": 4,
-  "difficulty": 1,
-  "id": 9,
-  "question": "What boxer's original name is Cassius Clay?"
-  },
-  {
-  "answer": "Lake Victoria",
-  "category": 3,
-  "difficulty": 2,
-  "id": 13,
-  "question": "What is the largest lake in Africa?"
-  },
-  {
-  "answer": "Mona Lisa",
-  "category": 2,
-  "difficulty": 3,
-  "id": 17,
-  "question": "La Giaconda is better known as what?"
-  },
-  {
-  "answer": "The Liver",
-  "category": 1,
-  "difficulty": 4,
-  "id": 20,
-  "question": "What is the heaviest organ in the human body?"
-  },
-  {
-  "answer": "Blood",
-  "category": 1,
-  "difficulty": 4,
-  "id": 22,
-  "question": "Hematology is a branch of medicine involving the study of what?"
-  },
-  {
-  "answer": "Lake Naser",
-  "category": 3,
-  "difficulty": 2,
-  "id": 24,
-  "question": "What Is Smallest Lake In Africa"
-  }
-  ],
-  "success": true,
-  "total_questions": 9
-  }
+      "questions": [
+          {
+              "answer": "Apollo 13",
+              "category": 5,
+              "difficulty": 4,
+              "id": 2,
+              "question": "What movie earned Tom Hanks his third straight Oscar nomination, in 1996?"
+          },
+          {
+              "answer": "Tom Cruise",
+              "category": 5,
+              "difficulty": 4,
+              "id": 4,
+              "question": "What actor did author Anne Rice first denounce, then praise in the role of her beloved Lestat?"
+          },
+          {
+              "answer": "Edward Scissorhands",
+              "category": 5,
+              "difficulty": 3,
+              "id": 6,
+              "question": "What was the title of the 1990 fantasy directed by Tim Burton about a young man with multi-bladed appendages?"
+          },
+          {
+              "answer": "Muhammad Ali",
+              "category": 4,
+              "difficulty": 1,
+              "id": 9,
+              "question": "What boxer's original name is Cassius Clay?"
+          },
+          {
+              "answer": "Lake Victoria",
+              "category": 3,
+              "difficulty": 2,
+              "id": 13,
+              "question": "What is the largest lake in Africa?"
+          },
+          {
+              "answer": "Mona Lisa",
+              "category": 2,
+              "difficulty": 3,
+              "id": 17,
+              "question": "La Giaconda is better known as what?"
+          },
+          {
+              "answer": "The Liver",
+              "category": 1,
+              "difficulty": 4,
+              "id": 20,
+              "question": "What is the heaviest organ in the human body?"
+          },
+          {
+              "answer": "Blood",
+              "category": 1,
+              "difficulty": 4,
+              "id": 22,
+              "question": "Hematology is a branch of medicine involving the study of what?"
+          },
+          {
+              "answer": "Lake Naser",
+              "category": 3,
+              "difficulty": 2,
+              "id": 24,
+              "question": "What Is Smallest Lake In Africa"
+          }
+          ],
+          "success": true,
+          "total_questions": 9
+      }
 
 #### GET /categories/\<int:category_id\>/questions
 
@@ -458,34 +458,34 @@ This endpoint either creates a new question or returns search results.
   - Gets questions by category id using url parameters.
   - Returns JSON object with paginated matching questions.
 - Sample: `curl http://127.0.0.1:5000/categories/4/questions`<br>
-  {
-  "category": "History",
-  "questions": [
-  {
-  "answer": "Maya Angelou",
-  "category": 4,
-  "difficulty": 2,
-  "id": 5,
-  "question": "Whose autobiography is entitled 'I Know Why the Caged Bird Sings'?"
-  },
-  {
-  "answer": "Muhammad Ali",
-  "category": 4,
-  "difficulty": 1,
-  "id": 9,
-  "question": "What boxer's original name is Cassius Clay?"
-  },
-  {
-  "answer": "George Washington Carver",
-  "category": 4,
-  "difficulty": 2,
-  "id": 12,
-  "question": "Who invented Peanut Butter?"
-  }
-  ],
-  "success": true,
-  "total_questions": 20
-  }
+      {
+          "category": "History",
+          "questions": [
+          {
+              "answer": "Maya Angelou",
+              "category": 4,
+              "difficulty": 2,
+              "id": 5,
+              "question": "Whose autobiography is entitled 'I Know Why the Caged Bird Sings'?"
+          },
+          {
+              "answer": "Muhammad Ali",
+              "category": 4,
+              "difficulty": 1,
+              "id": 9,
+              "question": "What boxer's original name is Cassius Clay?"
+          },
+          {
+              "answer": "George Washington Carver",
+              "category": 4,
+              "difficulty": 2,
+              "id": 12,
+              "question": "Who invented Peanut Butter?"
+          }
+          ],
+          "success": true,
+          "total_questions": 20
+      }
 
 #### POST /quizzes
 
